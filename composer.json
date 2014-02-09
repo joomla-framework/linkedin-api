@@ -3,7 +3,7 @@
     "type": "joomla-package",
     "description": "Joomla Linkedin Package",
     "keywords": ["joomla", "framework", "linkedin"],
-    "homepage": "https://github.com/joomla/joomla-framework-linkedin",
+    "homepage": "https://github.com/joomla-framework/linkedin-api",
     "license": "GPL-2.0+",
     "require": {
         "php": ">=5.3.10",
@@ -12,12 +12,14 @@
         "joomla/http": "~1.0",
         "joomla/registry": "~1.0"
     },
-    "target-dir": "Joomla/Linkedin",
-    "autoload": {
-    	"psr-0": {
-    		"Joomla\\Linkedin": ""
-    	}
+    "require-dev": {
+        "joomla/test": "~1.0"
     },
-    "minimum-stability": "beta"
+    "autoload": {
+    	"psr-4": {
+    		"Joomla\\Linkedin\\": "src/",
+            "Joomla\\Linkedin\\Tests\\": "Tests/"
+    	}
+    }
 }
 
