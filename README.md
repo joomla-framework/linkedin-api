@@ -1,4 +1,4 @@
-## The LinkedIn Package
+## The LinkedIn Package [![Build Status](https://travis-ci.org/joomla-framework/linkedin-api.png?branch=master)](https://travis-ci.org/joomla-framework/linkedin-api)
 
 ### Using the LinkedIn Package
 
