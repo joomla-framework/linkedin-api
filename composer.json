@@ -17,9 +17,13 @@
     },
     "autoload": {
     	"psr-4": {
-    		"Joomla\\Linkedin\\": "src/",
-            "Joomla\\Linkedin\\Tests\\": "Tests/"
+    		"Joomla\\Linkedin\\": "src/"
     	}
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Joomla\\Linkedin\\Tests\\": "Tests/"
+        }
     }
 }
 
