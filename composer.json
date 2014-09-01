@@ -22,6 +22,11 @@
             "Joomla\\Linkedin\\": "src/",
             "Joomla\\Linkedin\\Tests\\": "Tests/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
     }
 }
 
