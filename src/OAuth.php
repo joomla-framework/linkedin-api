@@ -9,7 +9,6 @@
 namespace Joomla\Linkedin;
 
 use Joomla\OAuth1\Client;
-use Joomla\Registry\Registry;
 use Joomla\Http\Http;
 use Joomla\Http\Response;
 use Joomla\Input\Input;
@@ -25,7 +24,7 @@ class OAuth extends Client
 	/**
 	 * Options for the OAuth object.
 	 *
-	 * @var    Registry
+	 * @var    array|\ArrayAccess
 	 * @since  1.0
 	 */
 	protected $options;
@@ -36,21 +35,35 @@ class OAuth extends Client
 	 * @param   AbstractWebApplication  $application  The application object.
 	 * @param   Http                    $client       The HTTP client object.
 	 * @param   Input                   $input        The Input object
-	 * @param   Registry                $options      OAuth options object.
+	 * @param   array|\ArrayAccess      $options      OAuth options object.
 	 *
 	 * @since   1.0
 	 */
-	public function __construct(AbstractWebApplication $application, Http $client, Input $input, Registry $options)
+	public function __construct(AbstractWebApplication $application, Http $client, Input $input = null, $options = array())
 	{
-		$this->options = $options;
-
-		$this->options->def('accessTokenURL', 'https://www.linkedin.com/uas/oauth/accessToken');
-		$this->options->def('authenticateURL', 'https://www.linkedin.com/uas/oauth/authenticate');
-		$this->options->def('authoriseURL', 'https://www.linkedin.com/uas/oauth/authorize');
-		$this->options->def('requestTokenURL', 'https://www.linkedin.com/uas/oauth/requestToken');
-
 		// Call the OAuth1 Client constructor to setup the object.
-		parent::__construct($this->options, $client, $input, $application);
+		parent::__construct($application, $client, $input, $options);
+
+		// Define some defaults
+		if ($this->getOption('accessTokenURL') === null)
+		{
+			$this->setOption('accessTokenURL', 'https://www.linkedin.com/uas/oauth/accessToken');
+		}
+
+		if ($this->getOption('authenticateURL') === null)
+		{
+			$this->setOption('authenticateURL', 'https://www.linkedin.com/uas/oauth/authenticate');
+		}
+
+		if ($this->getOption('authoriseURL') === null)
+		{
+			$this->setOption('authoriseURL', 'https://www.linkedin.com/uas/oauth/authorize');
+		}
+
+		if ($this->getOption('requestTokenURL') === null)
+		{
+			$this->setOption('requestTokenURL', 'https://www.linkedin.com/uas/oauth/requestToken');
+		}
 	}
 
 	/**
@@ -78,14 +91,7 @@ class OAuth extends Client
 		$response = $this->oauthRequest($path, 'GET', $parameters, $data);
 
 		// Verify response
-		if ($response->code == 200)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
+		return $response->code == 200;
 	}
 
 	/**
@@ -112,10 +118,8 @@ class OAuth extends Client
 			{
 				throw new \DomainException('Error code ' . $error->errorCode . ' received with message: ' . $error->message . '.');
 			}
-			else
-			{
-				throw new \DomainException($response->body);
-			}
+
+			throw new \DomainException($response->body);
 		}
 	}
 
