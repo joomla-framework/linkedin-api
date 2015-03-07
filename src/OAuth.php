@@ -23,7 +23,9 @@ use Joomla\Application\AbstractWebApplication;
 class OAuth extends Client
 {
 	/**
-	 * @var    Registry  Options for the \Joomla\Linkedin\OAuth object.
+	 * Options for the OAuth object.
+	 *
+	 * @var    Registry
 	 * @since  1.0
 	 */
 	protected $options;
@@ -31,14 +33,14 @@ class OAuth extends Client
 	/**
 	 * Constructor.
 	 *
-	 * @param   Registry                $options      OAuth options object.
+	 * @param   AbstractWebApplication  $application  The application object.
 	 * @param   Http                    $client       The HTTP client object.
 	 * @param   Input                   $input        The Input object
-	 * @param   AbstractWebApplication  $application  The application object.
+	 * @param   Registry                $options      OAuth options object.
 	 *
-	 * @since 1.0
+	 * @since   1.0
 	 */
-	public function __construct(Registry $options, Http $client, Input $input, AbstractWebApplication $application)
+	public function __construct(AbstractWebApplication $application, Http $client, Input $input, Registry $options)
 	{
 		$this->options = $options;
 
@@ -94,8 +96,8 @@ class OAuth extends Client
 	 *
 	 * @return  void
 	 *
-	 * @since  1.0
-	 * @throws \DomainException
+	 * @since   1.0
+	 * @throws  \DomainException
 	 */
 	public function validateResponse($url, $response)
 	{
@@ -137,7 +139,7 @@ class OAuth extends Client
 	/**
 	 * Method to get the current scope
 	 *
-	 * @return  string String or an array of string containing permissions.
+	 * @return  string  String or an array of string containing permissions.
 	 *
 	 * @since   1.0
 	 */
