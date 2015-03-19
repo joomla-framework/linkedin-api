@@ -39,7 +39,7 @@ class OAuth extends Client
 	 *
 	 * @since   1.0
 	 */
-	public function __construct(AbstractWebApplication $application, Http $client, Input $input = null, $options = array())
+	public function __construct(AbstractWebApplication $application, Http $client = null, Input $input = null, $options = array())
 	{
 		// Call the OAuth1 Client constructor to setup the object.
 		parent::__construct($application, $client, $input, $options);
