@@ -18,8 +18,12 @@
         "squizlabs/php_codesniffer": "1.*"
     },
     "autoload": {
+    	"psr-4": {
+    		"Joomla\\Linkedin\\": "src/"
+    	}
+    },
+    "autoload-dev": {
         "psr-4": {
-            "Joomla\\Linkedin\\": "src/",
             "Joomla\\Linkedin\\Tests\\": "Tests/"
         }
     },
