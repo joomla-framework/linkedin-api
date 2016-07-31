@@ -88,7 +88,7 @@ class LinkedinTestCase extends \PHPUnit_Framework_TestCase
 
 		$this->options = new Registry;
 		$this->input = new Input;
-		$this->client = $this->getMock('\\Joomla\\Http\\Http', array('get', 'post', 'delete', 'put'));
+		$this->client = $this->getMockBuilder('\\Joomla\\Http\\Http')->getMock();
 		$this->application = new WebInspector;
 		$this->oauth = new OAuth($this->application, $this->client, $this->input, $this->options);
 		$this->oauth->setToken(array('key' => $key, 'secret' => $secret));
