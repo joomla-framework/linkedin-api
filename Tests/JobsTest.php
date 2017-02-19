@@ -10,8 +10,6 @@ use Joomla\Linkedin\Jobs;
 use \DomainException;
 use \stdClass;
 
-require_once __DIR__ . '/case/LinkedinTestCase.php';
-
 /**
  * Test class for Jobs.
  *

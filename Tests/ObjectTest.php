@@ -8,7 +8,6 @@ namespace Joomla\Linkedin\Tests;
 
 use Joomla\Linkedin\Object;
 
-require_once __DIR__ . '/case/LinkedinTestCase.php';
 require_once __DIR__ . '/stubs/ObjectMock.php';
 
 /**
