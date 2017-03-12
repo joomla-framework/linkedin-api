@@ -11,13 +11,14 @@ use Joomla\Http\Http;
 use Joomla\Input\Input;
 use Joomla\Linkedin\OAuth;
 use Joomla\Test\WebInspector;
+use PHPUnit\Framework\TestCase;
 
 /**
  * Test case for Linkedin.
  *
  * @since  1.0
  */
-class LinkedinTestCase extends \PHPUnit_Framework_TestCase
+class LinkedinTestCase extends TestCase
 {
 	/**
 	 * @var    Registry  Options for the Linkedin object.

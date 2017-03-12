@@ -16,8 +16,6 @@ use Joomla\Linkedin\Stream;
 use Joomla\Linkedin\Jobs;
 use \DomainException;
 
-require_once __DIR__ . '/case/LinkedinTestCase.php';
-
 /**
  * Test class for Linkedin.
  *

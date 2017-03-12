@@ -10,8 +10,6 @@ use Joomla\Linkedin\Companies;
 use \DomainException;
 use \stdClass;
 
-require_once __DIR__ . '/case/LinkedinTestCase.php';
-
 /**
  * Test class for Companies.
  *
@@ -69,7 +67,16 @@ class CompaniesTest extends LinkedinTestCase
 
 		if ($id == null && $name == null && $domain == null)
 		{
-			$this->setExpectedException('RuntimeException');
+			// expectException was added in PHPUnit 5.2 and setExpectedException removed in 6.0
+			if (method_exists($this, 'expectException'))
+			{
+				$this->expectException('RuntimeException');
+			}
+			else
+			{
+				$this->setExpectedException('RuntimeException');
+			}
+
 			$this->object->getCompanies($id, $name, $domain, $fields);
 		}
 
