@@ -13,7 +13,7 @@ namespace Joomla\Linkedin;
  *
  * @since  1.0
  */
-class Communications extends Object
+class Communications extends AbstractLinkedinObject
 {
 	/**
 	 * Method used to invite people.

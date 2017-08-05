@@ -13,7 +13,7 @@ namespace Joomla\Linkedin;
  *
  * @since  1.0
  */
-class Jobs extends Object
+class Jobs extends AbstractLinkedinObject
 {
 	/**
 	 * Method to retrieve detailed information about a job.

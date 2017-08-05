@@ -9,11 +9,11 @@ namespace Joomla\Linkedin\Tests;
 require_once __DIR__ . '/stubs/ObjectMock.php';
 
 /**
- * Test class for JLinkedinObject.
+ * Test class for Joomla\Linkedin\AbstractLinkedinObject.
  *
  * @since  1.0
  */
-class ObjectTest extends LinkedinTestCase
+class AbstractLinkedinObjectTest extends LinkedinTestCase
 {
 	/**
 	 * Sets up the fixture, for example, opens a network connection.

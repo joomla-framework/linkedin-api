@@ -13,7 +13,7 @@ namespace Joomla\Linkedin;
  *
  * @since  1.0
  */
-class Companies extends Object
+class Companies extends AbstractLinkedinObject
 {
 	/**
 	 * Method to retrieve companies using a company ID, a universal name, or an email domain.

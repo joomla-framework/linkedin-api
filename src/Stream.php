@@ -13,7 +13,7 @@ namespace Joomla\Linkedin;
  *
  * @since  1.0
  */
-class Stream extends Object
+class Stream extends AbstractLinkedinObject
 {
 	/**
 	 * Method to add a new share. Note: post must contain comment and/or (title and url).

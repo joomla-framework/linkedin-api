@@ -13,7 +13,7 @@ namespace Joomla\Linkedin;
  *
  * @since  1.0
  */
-class People extends Object
+class People extends AbstractLinkedinObject
 {
 	/**
 	 * Method to get a member's profile.

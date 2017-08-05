@@ -13,7 +13,7 @@ namespace Joomla\Linkedin;
  *
  * @since  1.0
  */
-class Groups extends Object
+class Groups extends AbstractLinkedinObject
 {
 	/**
 	 * Method to get a group.
