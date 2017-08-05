@@ -1,12 +1,10 @@
 <?php
 /**
- * @copyright  Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+ * @copyright  Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
 namespace Joomla\Linkedin\Tests;
-
-use Joomla\Linkedin\Object;
 
 require_once __DIR__ . '/stubs/ObjectMock.php';
 

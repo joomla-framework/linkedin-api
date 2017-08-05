@@ -2,7 +2,7 @@
 /**
  * Part of the Joomla Framework Linkedin Package
  *
- * @copyright  Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+ * @copyright  Copyright (C) 2005 - 2017 Open Source Matters, Inc. All rights reserved.
  * @license    GNU General Public License version 2 or later; see LICENSE
  */
 
@@ -18,55 +18,73 @@ use Joomla\Http\Http;
 class Linkedin
 {
 	/**
-	 * @var    array  Options for the Linkedin object.
+	 * Options for the Linkedin object.
+	 *
+	 * @var    array
 	 * @since  1.0
 	 */
 	protected $options;
 
 	/**
-	 * @var    Http  The HTTP client object to use in sending HTTP requests.
+	 * The HTTP client object to use in sending HTTP requests.
+	 *
+	 * @var    Http
 	 * @since  1.0
 	 */
 	protected $client;
 
 	/**
-	 * @var    OAuth The OAuth client.
+	 * The OAuth client.
+	 *
+	 * @var    OAuth
 	 * @since  1.0
 	 */
 	protected $oauth;
 
 	/**
-	 * @var    People  Linkedin API object for people.
+	 * Linkedin API object for people.
+	 *
+	 * @var    People
 	 * @since  1.0
 	 */
 	protected $people;
 
 	/**
-	 * @var    Groups  Linkedin API object for groups.
+	 * Linkedin API object for groups.
+	 *
+	 * @var    Groups
 	 * @since  1.0
 	 */
 	protected $groups;
 
 	/**
-	 * @var    Companies  Linkedin API object for companies.
+	 * Linkedin API object for companies.
+	 *
+	 * @var    Companies
 	 * @since  1.0
 	 */
 	protected $companies;
 
 	/**
-	 * @var    Jobs  Linkedin API object for jobs.
+	 * Linkedin API object for jobs.
+	 *
+	 * @var    Jobs
 	 * @since  1.0
 	 */
 	protected $jobs;
 
 	/**
-	 * @var    Stream  Linkedin API object for social stream.
+	 * Linkedin API object for social stream.
+	 *
+	 * @var    Stream
 	 * @since  1.0
 	 */
 	protected $stream;
 
 	/**
-	 * @var    Communications  Linkedin API object for communications.
+	 * Linkedin API object for communications.
+	 *
+	 * @var    Communications
 	 * @since  1.0
 	 */
 	protected $communications;
@@ -98,7 +116,7 @@ class Linkedin
 	 *
 	 * @param   string  $name  Name of property to retrieve
 	 *
-	 * @return  Object  Linkedin API object (statuses, users, favorites, etc.).
+	 * @return  AbstractLinkedinObject  Linkedin API object (statuses, users, favorites, etc.).
 	 *
 	 * @since   1.0
 	 * @throws  \InvalidArgumentException If $name is not a valid sub class.
