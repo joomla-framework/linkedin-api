@@ -6,13 +6,13 @@
 
 namespace Joomla\Linkedin\Tests;
 
-use Joomla\Linkedin\Object;
+use Joomla\Linkedin\AbstractLinkedinObject;
 
 /**
  * Linkedin mock object.
  *
  * @since  1.0
  */
-class ObjectMock extends Object
+class ObjectMock extends AbstractLinkedinObject
 {
 }
