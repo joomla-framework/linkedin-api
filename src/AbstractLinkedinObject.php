@@ -13,7 +13,7 @@ use Joomla\Http\Http;
 /**
  * Linkedin API object class for the Joomla Framework.
  *
- * @since  __DEPLOY_VERSION__
+ * @since  1.2.0
  */
 abstract class AbstractLinkedinObject
 {
@@ -21,7 +21,7 @@ abstract class AbstractLinkedinObject
 	 * Options for the Linkedin object.
 	 *
 	 * @var    array
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.2.0
 	 */
 	protected $options;
 
@@ -29,7 +29,7 @@ abstract class AbstractLinkedinObject
 	 * The HTTP client object to use in sending HTTP requests.
 	 *
 	 * @var    Http
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.2.0
 	 */
 	protected $client;
 
@@ -37,7 +37,7 @@ abstract class AbstractLinkedinObject
 	 * The OAuth client.
 	 *
 	 * @var    OAuth
-	 * @since  __DEPLOY_VERSION__
+	 * @since  1.2.0
 	 */
 	protected $oauth;
 
@@ -48,7 +48,7 @@ abstract class AbstractLinkedinObject
 	 * @param   Http   $client   The HTTP client object.
 	 * @param   OAuth  $oauth    The OAuth client.
 	 *
-	 * @since   __DEPLOY_VERSION__
+	 * @since   1.2.0
 	 */
 	public function __construct($options = array(), Http $client = null, OAuth $oauth = null)
 	{
@@ -64,7 +64,7 @@ abstract class AbstractLinkedinObject
 	 *
 	 * @return  string  String with the converted boolean.
 	 *
-	 * @since   __DEPLOY_VERSION__
+	 * @since   1.2.0
 	 */
 	public function booleanToString($bool)
 	{
@@ -85,7 +85,7 @@ abstract class AbstractLinkedinObject
 	 *
 	 * @return  mixed  The option value.
 	 *
-	 * @since   __DEPLOY_VERSION__
+	 * @since   1.2.0
 	 */
 	public function getOption($key)
 	{
@@ -100,7 +100,7 @@ abstract class AbstractLinkedinObject
 	 *
 	 * @return  AbstractLinkedinObject  This object for method chaining.
 	 *
-	 * @since   __DEPLOY_VERSION__
+	 * @since   1.2.0
 	 */
 	public function setOption($key, $value)
 	{
