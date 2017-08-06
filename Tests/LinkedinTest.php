@@ -6,15 +6,7 @@
 
 namespace Joomla\Linkedin\Tests;
 
-use Joomla\Test\TestHelper;
 use Joomla\Linkedin\Linkedin;
-use Joomla\Linkedin\People;
-use Joomla\Linkedin\Groups;
-use Joomla\Linkedin\Communications;
-use Joomla\Linkedin\Companies;
-use Joomla\Linkedin\Stream;
-use Joomla\Linkedin\Jobs;
-use \DomainException;
 
 /**
  * Test class for Linkedin.
@@ -140,42 +132,19 @@ class LinkedinTest extends LinkedinTestCase
 	}
 
 	/**
-	 * Tests the setOption method
+	 * Tests the setOption and getOption methods
 	 *
 	 * @return  void
 	 *
 	 * @since   1.0
 	 */
-	public function testSetOption()
+	public function testSetAndGetOption()
 	{
 		$this->object->setOption('api.url', 'https://example.com/settest');
 
-		$value = TestHelper::getValue($this->object, 'options');
-
-		$this->assertThat(
-			$value['api.url'],
-			$this->equalTo('https://example.com/settest')
-		);
-	}
-
-	/**
-	 * Tests the getOption method
-	 *
-	 * @return  void
-	 *
-	 * @since   1.0
-	 */
-	public function testGetOption()
-	{
-		TestHelper::setValue(
-			$this->object, 'options', array(
-				'api.url' => 'https://example.com/gettest'
-			)
-		);
-
-		$this->assertThat(
+		$this->assertSame(
 			$this->object->getOption('api.url'),
-			$this->equalTo('https://example.com/gettest')
+			'https://example.com/gettest'
 		);
 	}
 }

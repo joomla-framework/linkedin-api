@@ -6,11 +6,11 @@
 
 namespace Joomla\Linkedin\Tests;
 
-use Joomla\Registry\Registry;
+use Joomla\Application\AbstractWebApplication;
 use Joomla\Http\Http;
 use Joomla\Input\Input;
 use Joomla\Linkedin\OAuth;
-use Joomla\Test\WebInspector;
+use Joomla\Registry\Registry;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -39,7 +39,7 @@ class LinkedinTestCase extends TestCase
 	protected $input;
 
 	/**
-	 * @var    WebInspector The application object to send HTTP headers for redirects.
+	 * @var    AbstractWebApplication|\PHPUnit_Framework_MockObject_MockObject The application object to send HTTP headers for redirects.
 	 * @since  1.0
 	 */
 	protected $application;
@@ -90,22 +90,12 @@ class LinkedinTestCase extends TestCase
 		$this->options = new Registry;
 		$this->input = new Input;
 		$this->client = $this->getMockBuilder('\\Joomla\\Http\\Http')->getMock();
-		$this->application = new WebInspector;
+		$this->application = $this->getMockForAbstractClass('\\Joomla\\Application\\AbstractWebApplication');
 		$this->oauth = new OAuth($this->options, $this->client, $this->input, $this->application);
 		$this->oauth->setToken(array('key' => $key, 'secret' => $secret));
 
 		$this->options->set('consumer_key', $key);
 		$this->options->set('consumer_secret', $secret);
 		$this->options->set('callback', $my_url);
-	}
-
-	/**
-	 * Tears down the fixture, for example, closes a network connection.
-	 * This method is called after a test is executed.
-	 *
-	 * @return void
-	 */
-	protected function tearDown()
-	{
 	}
 }
