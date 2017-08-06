@@ -144,7 +144,7 @@ class LinkedinTest extends LinkedinTestCase
 
 		$this->assertSame(
 			$this->object->getOption('api.url'),
-			'https://example.com/gettest'
+			'https://example.com/settest'
 		);
 	}
 }
