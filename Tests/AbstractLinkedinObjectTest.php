@@ -6,8 +6,6 @@
 
 namespace Joomla\Linkedin\Tests;
 
-require_once __DIR__ . '/stubs/ObjectMock.php';
-
 /**
  * Test class for Joomla\Linkedin\AbstractLinkedinObject.
  *
@@ -27,7 +25,7 @@ class AbstractLinkedinObjectTest extends LinkedinTestCase
 	{
 		parent::setUp();
 
-		$this->object = new ObjectMock($this->options, $this->client, $this->oauth);
+		$this->object = $this->getMockForAbstractClass('Joomla\\Linkedin\\AbstractLinkedinObject');
 	}
 
 	/**
@@ -41,9 +39,9 @@ class AbstractLinkedinObjectTest extends LinkedinTestCase
 	{
 		$this->object->setOption('api.url', 'https://example.com/settest');
 
-		$this->assertThat(
-			$this->options->get('api.url'),
-			$this->equalTo('https://example.com/settest')
+		$this->assertSame(
+			$this->object->getOption('api.url'),
+			'https://example.com/settest'
 		);
 	}
 }
