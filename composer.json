@@ -13,7 +13,7 @@
     },
     "require-dev": {
         "joomla/registry": "^1.4.5|~2.0",
-        "phpunit/phpunit": "~6.0",
+        "phpunit/phpunit": "~6.3",
         "squizlabs/php_codesniffer": "1.*"
     },
     "autoload": {
