@@ -4,7 +4,7 @@
     "description": "Joomla Linkedin Package",
     "keywords": ["joomla", "framework", "linkedin"],
     "homepage": "https://github.com/joomla-framework/linkedin-api",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0-or-later",
     "require": {
         "php": "~7.0",
         "joomla/oauth1": "~2.0@dev",
