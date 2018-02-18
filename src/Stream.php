@@ -296,7 +296,8 @@ class Stream extends AbstractLinkedinObject
 	 * @since   1.0
 	 */
 	public function getNetworkUpdates($id = null, $self = true, $type = null, $count = 0, $start = 0, $after = null, $before = null,
-		$hidden = false)
+		$hidden = false
+	)
 	{
 		$token = $this->oauth->getToken();
 
@@ -564,7 +565,7 @@ class Stream extends AbstractLinkedinObject
 	 *
 	 * @since   1.0
 	 */
-	private function _likeUnlike($key, $like)
+	private function processLikeUnlike($key, $like)
 	{
 		$token = $this->oauth->getToken();
 
@@ -604,7 +605,7 @@ class Stream extends AbstractLinkedinObject
 	 */
 	public function like($key)
 	{
-		return $this->_likeUnlike($key, true);
+		return $this->processLikeUnlike($key, true);
 	}
 
 	/**
@@ -618,6 +619,6 @@ class Stream extends AbstractLinkedinObject
 	 */
 	public function unlike($key)
 	{
-		return $this->_likeUnlike($key, false);
+		return $this->processLikeUnlike($key, false);
 	}
 }
