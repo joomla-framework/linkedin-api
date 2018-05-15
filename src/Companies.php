@@ -11,7 +11,8 @@ namespace Joomla\Linkedin;
 /**
  * Linkedin API Companies class for the Joomla Framework.
  *
- * @since  1.0
+ * @since       1.0
+ * @deprecated  The joomla/linkedin package is deprecated
  */
 class Companies extends Object
 {

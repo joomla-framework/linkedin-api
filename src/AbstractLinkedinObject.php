@@ -13,7 +13,8 @@ use Joomla\Http\Http;
 /**
  * Linkedin API object class for the Joomla Framework.
  *
- * @since  1.2.0
+ * @since       1.2.0
+ * @deprecated  The joomla/linkedin package is deprecated
  */
 abstract class AbstractLinkedinObject
 {

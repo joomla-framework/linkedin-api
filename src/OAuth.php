@@ -18,7 +18,8 @@ use Joomla\Application\AbstractWebApplication;
 /**
  * Joomla Framework class for generating Linkedin API access token.
  *
- * @since  1.0
+ * @since       1.0
+ * @deprecated  The joomla/linkedin package is deprecated
  */
 class OAuth extends Client
 {

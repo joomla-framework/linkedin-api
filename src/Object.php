@@ -12,7 +12,7 @@ namespace Joomla\Linkedin;
  * Linkedin API object class for the Joomla Framework.
  *
  * @since       1.0
- * @deprecated  2.0  Use AbstractLinkedinObject instead.
+ * @deprecated  The joomla/linkedin package is deprecated
  */
 abstract class Object extends AbstractLinkedinObject
 {
