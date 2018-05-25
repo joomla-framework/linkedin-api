@@ -1,5 +1,9 @@
 ## The LinkedIn Package [![Build Status](https://travis-ci.org/joomla-framework/linkedin-api.png?branch=master)](https://travis-ci.org/joomla-framework/linkedin-api)
 
+### Deprecated
+
+The `joomla/linkedin` package is deprecated with no further updates planned.
+
 ### Using the LinkedIn Package
 
 The LinkedIn package is designed to be a straightforward interface for working with LinkedIn. It is based on the REST API. You can find documentation on the API at [http://developer.linkedin.com/rest](http://developer.linkedin.com/rest).
