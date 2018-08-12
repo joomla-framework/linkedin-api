@@ -34,7 +34,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -90,7 +90,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -160,7 +160,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -231,7 +231,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -298,7 +298,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -363,7 +363,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -402,7 +402,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -480,7 +480,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -499,7 +499,7 @@ class Groups extends Object
 		$base .= '/group-memberships/' . $groupId . '/posts';
 
 		$data['format'] = 'json';
-		$data['role'] = $role;
+		$data['role']   = $role;
 
 		// Check if fields is specified.
 		if ($fields)
@@ -562,7 +562,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -603,7 +603,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -655,7 +655,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -697,7 +697,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -764,7 +764,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -831,7 +831,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -869,7 +869,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -903,7 +903,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -942,7 +942,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -983,7 +983,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -1017,7 +1017,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -1066,7 +1066,7 @@ class Groups extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.

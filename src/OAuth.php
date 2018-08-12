@@ -8,12 +8,12 @@
 
 namespace Joomla\Linkedin;
 
-use Joomla\OAuth1\Client;
-use Joomla\Registry\Registry;
+use Joomla\Application\AbstractWebApplication;
 use Joomla\Http\Http;
 use Joomla\Http\Response;
 use Joomla\Input\Input;
-use Joomla\Application\AbstractWebApplication;
+use Joomla\OAuth1\Client;
+use Joomla\Registry\Registry;
 
 /**
  * Joomla Framework class for generating Linkedin API access token.
@@ -65,7 +65,7 @@ class OAuth extends Client
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		$data['format'] = 'json';

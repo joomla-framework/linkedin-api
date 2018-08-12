@@ -38,7 +38,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -122,7 +122,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -183,7 +183,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -236,7 +236,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -262,7 +262,7 @@ class Stream extends Object
 
 		// Set request parameters.
 		$data['format'] = 'json';
-		$data['type'] = 'SHAR';
+		$data['type']   = 'SHAR';
 
 		// Check if self is true
 		if ($self)
@@ -304,7 +304,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -389,7 +389,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -423,7 +423,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -464,7 +464,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -498,7 +498,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -538,7 +538,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -572,7 +572,7 @@ class Stream extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.

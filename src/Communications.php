@@ -36,7 +36,7 @@ class Communications extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -96,15 +96,15 @@ class Communications extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base for people search.
 		$base = '/v1/people-search:(people:(api-standard-profile-request))';
 
-		$data['format'] = 'json';
+		$data['format']     = 'json';
 		$data['first-name'] = $firstName;
-		$data['last-name'] = $lastName;
+		$data['last-name']  = $lastName;
 
 		// Build the request path.
 		$path = $this->getOption('api.url') . $base;
@@ -124,7 +124,7 @@ class Communications extends Object
 
 		// Split on the colon character.
 		$value = explode(':', $value);
-		$name = $value[0];
+		$name  = $value[0];
 		$value = $value[1];
 
 		// Set the success response code.
@@ -182,7 +182,7 @@ class Communications extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.

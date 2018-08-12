@@ -32,7 +32,7 @@ class Jobs extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -71,7 +71,7 @@ class Jobs extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -110,7 +110,7 @@ class Jobs extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -148,7 +148,7 @@ class Jobs extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the success response code.
@@ -183,7 +183,7 @@ class Jobs extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base
@@ -250,7 +250,7 @@ class Jobs extends Object
 
 		// Set parameters.
 		$parameters = array(
-			'oauth_token' => $token['key']
+			'oauth_token' => $token['key'],
 		);
 
 		// Set the API base

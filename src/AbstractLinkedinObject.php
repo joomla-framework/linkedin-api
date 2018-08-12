@@ -54,8 +54,8 @@ abstract class AbstractLinkedinObject
 	public function __construct($options = array(), Http $client = null, OAuth $oauth = null)
 	{
 		$this->options = $options;
-		$this->client = isset($client) ? $client : new Http($this->options);
-		$this->oauth = $oauth;
+		$this->client  = isset($client) ? $client : new Http($this->options);
+		$this->oauth   = $oauth;
 	}
 
 	/**
