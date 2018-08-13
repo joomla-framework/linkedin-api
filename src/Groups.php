@@ -472,8 +472,8 @@ class Groups extends Object
 	 *
 	 * @since   1.0
 	 */
-	public function getUserPosts($groupId, $role, $personId = null, $fields = null, $start = 0, $count = 0,
-		$order = null, $category = 'discussion', $modifiedSince = null
+	public function getUserPosts($groupId, $role, $personId = null, $fields = null, $start = 0, $count = 0, $order = null, $category = 'discussion',
+		$modifiedSince = null
 	)
 	{
 		$token = $this->oauth->getToken();

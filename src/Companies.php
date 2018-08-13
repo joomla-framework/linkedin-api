@@ -200,7 +200,7 @@ class Companies extends Object
 		{
 			$data['facet'] = array();
 
-			for ($i = 0; $i < count($facet); $i++)
+			for ($i = 0; $i < \count($facet); $i++)
 			{
 				if ($facet[$i])
 				{

@@ -195,7 +195,7 @@ class Communications extends Object
 		$xml = '<mailbox-item>
 				  <recipients>';
 
-		if (is_array($recipient))
+		if (\is_array($recipient))
 		{
 			foreach ($recipient as $r)
 			{

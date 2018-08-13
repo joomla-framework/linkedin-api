@@ -296,9 +296,7 @@ class Stream extends Object
 	 *
 	 * @since   1.0
 	 */
-	public function getNetworkUpdates($id = null, $self = true, $type = null, $count = 0, $start = 0, $after = null, $before = null,
-		$hidden = false
-	)
+	public function getNetworkUpdates($id = null, $self = true, $type = null, $count = 0, $start = 0, $after = null, $before = null, $hidden = false)
 	{
 		$token = $this->oauth->getToken();
 

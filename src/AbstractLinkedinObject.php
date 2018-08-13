@@ -73,10 +73,8 @@ abstract class AbstractLinkedinObject
 		{
 			return 'true';
 		}
-		else
-		{
-			return 'false';
-		}
+
+		return 'false';
 	}
 
 	/**

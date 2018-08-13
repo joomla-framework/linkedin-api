@@ -81,10 +81,8 @@ class OAuth extends Client
 		{
 			return true;
 		}
-		else
-		{
-			return false;
-		}
+
+		return false;
 	}
 
 	/**
@@ -95,8 +93,8 @@ class OAuth extends Client
 	 *
 	 * @return  void
 	 *
-	 * @since  1.0
-	 * @throws \DomainException
+	 * @since   1.0
+	 * @throws  \DomainException
 	 */
 	public function validateResponse($url, $response)
 	{
@@ -111,10 +109,8 @@ class OAuth extends Client
 			{
 				throw new \DomainException('Error code ' . $error->errorCode . ' received with message: ' . $error->message . '.');
 			}
-			else
-			{
-				throw new \DomainException($response->body);
-			}
+
+			throw new \DomainException($response->body);
 		}
 	}
 
