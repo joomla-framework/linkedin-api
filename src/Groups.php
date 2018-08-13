@@ -240,7 +240,7 @@ class Groups extends Object
 		// Build xml.
 		$xml = '<group-membership>';
 
-		if (!is_null($showLogo))
+		if ($showLogo !== null)
 		{
 			$xml .= '<show-group-logo-in-profile>' . $this->booleanToString($showLogo) . '</show-group-logo-in-profile>';
 		}
@@ -250,17 +250,17 @@ class Groups extends Object
 			$xml .= '<email-digest-frequency><code>' . $digestFrequency . '</code></email-digest-frequency>';
 		}
 
-		if (!is_null($announcements))
+		if ($announcements !== null)
 		{
 			$xml .= '<email-announcements-from-managers>' . $this->booleanToString($announcements) . '</email-announcements-from-managers>';
 		}
 
-		if (!is_null($allowMessages))
+		if ($allowMessages !== null)
 		{
 			$xml .= '<allow-messages-from-members>' . $this->booleanToString($allowMessages) . '</allow-messages-from-members>';
 		}
 
-		if (!is_null($newPost))
+		if ($newPost !== null)
 		{
 			$xml .= '<email-for-every-new-post>' . $this->booleanToString($newPost) . '</email-for-every-new-post>';
 		}
@@ -310,7 +310,7 @@ class Groups extends Object
 		// Build xml.
 		$xml = '<group-membership><group><id>' . $groupId . '</id></group>';
 
-		if (!is_null($showLogo))
+		if ($showLogo !== null)
 		{
 			$xml .= '<show-group-logo-in-profile>' . $this->booleanToString($showLogo) . '</show-group-logo-in-profile>';
 		}
@@ -320,17 +320,17 @@ class Groups extends Object
 			$xml .= '<email-digest-frequency><code>' . $digestFrequency . '</code></email-digest-frequency>';
 		}
 
-		if (!is_null($announcements))
+		if ($announcements !== null)
 		{
 			$xml .= '<email-announcements-from-managers>' . $this->booleanToString($announcements) . '</email-announcements-from-managers>';
 		}
 
-		if (!is_null($allowMessages))
+		if ($allowMessages !== null)
 		{
 			$xml .= '<allow-messages-from-members>' . $this->booleanToString($allowMessages) . '</allow-messages-from-members>';
 		}
 
-		if (!is_null($newPost))
+		if ($newPost !== null)
 		{
 			$xml .= '<email-for-every-new-post>' . $this->booleanToString($newPost) . '</email-for-every-new-post>';
 		}
