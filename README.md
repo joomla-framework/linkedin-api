@@ -1,4 +1,4 @@
-## The LinkedIn Package [![Build Status](https://travis-ci.org/joomla-framework/linkedin-api.png?branch=master)](https://travis-ci.org/joomla-framework/linkedin-api)
+## The LinkedIn Package [![Build Status](https://ci.joomla.org/api/badges/joomla-framework/linkedin-api/status.svg)](https://ci.joomla.org/joomla-framework/linkedin-api)
 
 ### Deprecated
 
